@@ -1,16 +1,27 @@
+/* 0000ff */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap');
+
 /********************** 글로벌 설정 *********************/
+html, body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background-color: #f9f9f9;}
+.wrapper {width: 1368px; margin: auto;}
+
+/********************** header-wrapper *********************/
+.header-wrapper {padding: 1em 0; background-color: #fff; border-bottom: 1px solid #ccc ;}
+.header-wrapper .header-wrap {display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper .header-wrap .navi-wrap {display: flex; font-weight: bold;}
+.header-wrapper .header-wrap .navi-wrap .navi a {padding: .75em 1.25em;}
+.header-wrapper .header-wrap .navi-wrap .navi:hover {background-color: rgb(0, 0, 255, .75); color: #fff;}
 
 
-/**********************  *********************/
+/********************** info-wrapper *********************/
 
 
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
-	
+	.wrapper {width: calc(100% - 2rem); margin: 0 1rem;}
 }
 
 @media (max-width: 1199px) {
-	
 }
 
 @media (max-width: 991px) {
