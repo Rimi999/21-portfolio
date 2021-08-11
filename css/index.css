@@ -3,25 +3,61 @@
 
 /********************** 글로벌 설정 *********************/
 html, body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background-color: #f9f9f9;}
-.wrapper {width: 1368px; margin: auto;}
+.wrapper {width: 1200px; margin: auto;}
+.wrapper2 {width: 800px; margin: auto;}
+.title-wrap h3.title {font-size: 2em; font-weight: 700;}
 
 /********************** header-wrapper *********************/
-.header-wrapper {padding: 1em 0; background-color: #fff; border-bottom: 1px solid #ccc ;}
+.header-wrapper {padding: 1em 0; background-color: #fff; border-bottom: 1px solid #ccc;
+	position: fixed; width: 100%;}
 .header-wrapper .header-wrap {display: flex; justify-content: space-between; align-items: center;}
 .header-wrapper .header-wrap .navi-wrap {display: flex; font-weight: bold;}
 .header-wrapper .header-wrap .navi-wrap .navi a {padding: .75em 1.25em;}
-.header-wrapper .header-wrap .navi-wrap .navi:hover {background-color: rgb(0, 0, 255, .75); color: #fff;}
+.header-wrapper .header-wrap .navi-wrap .navi:hover {background-color: #ccc;}
 
 
-/********************** info-wrapper *********************/
+/********************** main-wrapper *********************/
+.main-wrapper {height: 300px;}
+
+
+/********************** about-wrapper *********************/
+.about-wrapper {padding: 3em 0;}
+
+/********************** about-wrapper *********************/
+.skill-stage {padding: 5em 0;}
+.skill-wrapper .title-wrap {padding-bottom: 2em;}
+
+.skill-wrapper .skill-wrap {display: flex; margin-bottom: 3em;}
+.skill-wrapper .skill-wrap i {font-size: 2em; color:#0000ff;}
+.skill-wrapper .skill-wrap .cnt-wrapper .icon-wrap {display: flex; align-items: center; margin-bottom: .5em;}
+.skill-wrapper .skill-wrap .cnt-wrapper .cnt-wrap {line-height: 2; padding-left: 0.325em;}
+
+.icon-wrap .icon {padding: 0.325em; margin: 0.25em; border-radius: 15px;}
+.icon-wrap .icon.ps {background-color: #2d266a; color: #8ec5fb; border: solid 3px #8ec5fb;}
+.icon-wrap .icon.ai {background-color: #594222; color: #feba4f; border: solid 3px #feba4f;}
+.icon-wrap .icon.xd {background-color: #470137; color: #ff61f6; border: solid 3px #ff61f6;}
+.icon-wrap .icon.h {background: linear-gradient(to right,#e54d26 50%, #f16528 50%);	border: solid 3px #e54d26; color: #fff;}
+.icon-wrap .icon.c {background: linear-gradient(to right,#0064b4 50%, #2eaade 50%);	border: solid 3px #0064b4; color: #fff;}
+.icon-wrap .icon.js {background: linear-gradient(to right,#dab92c 50%, #ffd93a 50%);	border: solid 3px #dab92c; color: #fff;}
+.icon-wrap .icon.jq {background-color: #1169ae; border: solid 3px #1169ae;}
+
+/********************** work-wrapper *********************/
+.work-wrapper {height: 300px;}
+
+
+/********************** contact-wrapper *********************/
+.contact-wrapper {height: 300px;}
+
+
+
+/********************** footer-wrapper *********************/
+.footer-wrapper {background-color: #333; color: #ccc; padding: 2em 0;}
+.footer-wrapper .copyright {font-weight: 300; text-align: center; font-size: 0.875em;}
 
 
 /********************** 반응형 설정 *********************/
-@media (max-width: 1399px) {
-	.wrapper {width: calc(100% - 2rem); margin: 0 1rem;}
-}
-
 @media (max-width: 1199px) {
+	.wrapper {width: calc(100% - 2rem); margin: 0 1rem;}
 }
 
 @media (max-width: 991px) {
@@ -29,7 +65,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background
 }
 
 @media (max-width: 767px) {
-	
+	.wrapper2 {width: calc(100% - 2rem); margin: 0 1rem;}
 }
 
 @media (max-width: 575px) {
