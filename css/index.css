@@ -64,6 +64,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background
 
 /********************** work-wrapper *********************/
 .work-wrapper {padding: 3em 0;}
+.work-wrapper .swiper-container {margin-top: 2em;}
 .work-wrapper .swiper-container .swiper-slide .img-wrap {background-color: #fff; text-align: center;}
 .work-wrapper .swiper-container .swiper-slide .cnt-wrap {padding: 2em 1em; background-color: #eee;}
 .work-wrapper .swiper-container .swiper-slide .cnt-wrap .cnt {line-height: 2;}
@@ -72,7 +73,13 @@ html, body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background
 
 /********************** contact-wrapper *********************/
 .contact-wrapper {padding: 3em 0;}
-
+.contact-wrapper .cnt-wrap {display: flex; justify-content: center; align-items: center;
+	padding: 1em 0; font-size: 1.5em; background-color: #eee; margin-top: 2rem;}
+.contact-wrapper .cnt-wrap i {margin-left: .5rem;}
+.contact-wrapper .cnt-wrap .email-wrap a {display: flex; align-items: center; margin-right: 3rem;}
+.contact-wrapper .cnt-wrap .git-wrap a {display: flex; align-items: center;}
+.contact-wrapper .cnt-wrap .email-wrap:hover,
+.contact-wrapper .cnt-wrap .git-wrap:hover {color: #0000ff;}
 
 
 /********************** footer-wrapper *********************/
